@@ -13,13 +13,8 @@ public class Cake {
     //// Both of these properties violate encapsulation rules. All should be
     // declared private scope and should have getter and/or setter methods.
     ///////
-
-    // default scope -- visible only to classes in the same package
-    int quantity;
-
-    // protected scope -- visible to classes in the same package, or to
-    // subclasses of this class in any package.
-    protected int size;
+    public int quantity;
+    public int size;
 
     //// Some of the methods below violate encapsulation rules. Many should
     //   be private, those that have arguments (setters) need validation rules.
@@ -32,6 +27,13 @@ public class Cake {
     public int getQuantity() {
         return quantity;
     }
+    
+    /* 
+        These methods represent steps that should be performed
+        in a certain order, but there is no guarantee this will happen.
+        Furthermore, making all of these methods public exposes complexity
+        that is not necessary. 
+    */
 
     // VERY BAD! quantity should be validated for legal range
     public void gatherIngredients(int quantity) {
