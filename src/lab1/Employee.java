@@ -26,7 +26,7 @@ public class Employee {
     public Employee() {
         currentDate = new Date();
     }
-    public void doOrientation(String cubeId){
+    public void doFirstTimeOrientation(String cubeId){
      meetWithHrForBenefitAndSalryInfo();
      meetDepartmentStaff();
      reviewDeptPolicies(); 
@@ -34,9 +34,10 @@ public class Employee {
      getStatus();
      
     }
+    
 
     // Assume this must be performed first
-    private void meetWithHrForBenefitAndSalryInfo() {
+    public void meetWithHrForBenefitAndSalryInfo() {
         SimpleDateFormat sdf = new SimpleDateFormat("M/d/yyyy");
         String fmtDate = sdf.format(currentDate);
         System.out.println("Met with Hr on " + fmtDate);

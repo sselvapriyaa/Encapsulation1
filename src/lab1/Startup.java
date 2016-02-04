@@ -19,13 +19,8 @@ public class Startup {
             may need to create a new class that talks to Employee. This does
             not have to be a GUI class.
         */
-        HRManager hr = new HRManager();
-        
-        hr.orientNewEmployee("Peter","Piper","333-1234");
-        
-        System.out.println("The employee's status is: " + hr.getEmployeeStatus());
-    
-           
+        Company company=new Company();
+        company.hireEmployee("Sue", "Due", "222-22-2222");
     }
     
     
