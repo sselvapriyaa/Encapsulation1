@@ -21,6 +21,7 @@ public class Startup {
         */
         Company company=new Company();
         company.hireEmployee("Sue", "Due", "222-22-2222");
+        
     }
     
     

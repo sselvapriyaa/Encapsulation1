@@ -24,5 +24,8 @@ public class HRManager {
     public void orientEmployee(){
         employee.doFirstTimeOrientation("A101");
     }
+    public String getEmployeeStatus() {
+        return employee.getStatus();
+    }
     
 }

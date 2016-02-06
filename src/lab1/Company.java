@@ -15,14 +15,19 @@ public class Company {
     public Company(){
         hr=new HRManager();
     }
+    
     public void hireEmployee(String firstName,String lastName,String ssn){
         
     }
-    public void setHRManager(String hr){
-        this.hr=hr;
+
+    public void setHr(HRManager hr) {
+        this.hr = hr;
     }
-    public String getHRManager()
-    {
+
+    public HRManager getHr() {
         return hr;
     }
+    
+    
 }
+
